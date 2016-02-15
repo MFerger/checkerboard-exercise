@@ -23,20 +23,3 @@ for (var i = 0; i < 3000; i++) {
     body.appendChild(redBox);
   }
 };
-
-
-
-
-
-
-
-
-
-// var grid = document.createElement('grid');
-// grid.width = grid.height = 320;
-// var context = grid.getContext('2d');
-// for (var x = 0; x < 16; x++) for (var y = 0; y < 16; y++) {
-//   context.fillStyle = (x + y) % 2 ? 'red' : 'black';
-//   context.fillRect(40 * x, 40 * y, 40, 40)
-// }
-// document.body.appendChild(grid);
