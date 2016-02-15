@@ -19,7 +19,7 @@ Your `index.html` must look like this:
 	<title>Checkerboard</title>
 </head>
 <body>
-	<script type="text/javascript" src="script.js"></script>
+	<script type='text/javascript' src='script.js'></script>
 </body>
 </html>
 ```
