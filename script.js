@@ -1,28 +1,27 @@
-for (var i = 0; i < 100; i++) {
-  var body = document.querySelector('body');
-  body.style.marginLeft = '-4px';
-  body.style.marginRight = '-4px';
-  body.style.marginTop = '-4px';
-  body.style.marginBottom = '-4px';
 
-  body.style.backgroundImage = 'linear-gradient(blue, red)';
-  var redBox = document.createElement('div');
-  redBox.style.width = '11.1%';
-  redBox.style.float = 'left';
-  redBox.style.paddingBottom = '11.1%';
-  redBox.style.backgroundColor = 'red';
-  redBox.style.opacity = '0.5';
+for (var i = 0; i < 63; i++) {
+var body  = document.querySelector('body');
+var newDiv = document.createElement('div');
 
-  var blackBox = document.createElement('div');
-  blackBox.style.width = '11.1%';
-  blackBox.style.float = 'left';
-  blackBox.style.paddingBottom = '11.1%';
-  blackBox.style.backgroundColor = 'black';
-  blackBox.style.opacity = '0.5';
+body.style.marginLeft = "-4px";
+body.style.marginRight = "-4px";
+body.style.marginTop = "-4px";
+body.style.marginBottom = "-4px";
 
-  if (i % 2 == 0) {
-    body.appendChild(blackBox);
-  } else {
-    body.appendChild(redBox);
+body.appendChild(newDiv);
+
+newDiv.style.width = "11.1%";
+newDiv.style.paddingBottom = "11.1%";
+newDiv.style.float = "left";
+
+body.style.backgroundImage = "linear-gradient(blue, orange)";
+
+if (i%2 === 0) {
+  newDiv.style.backgroundColor = "blue";
+  newDiv.style.opacity = ".4";
   }
-};
+else {
+  newDiv.style.backgroundColor = "green";
+  newDiv.style.opacity = ".4";
+  }
+}
